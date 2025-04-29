@@ -1,6 +1,6 @@
-This is an implementation of a high-performance edge detection pipeline designed for large scale batch image processing.
+This is an implementation of a *high-performance edge detection pipeline* designed for large scale batch image processing.
 
-It uses a hybrid approach, with MPI used to run the algorithm across multi-GPU clusters, and CUDA within each GPU to splitl work across hundreds of thousands of threads.  It also implements MPI I/O for parallelized concurrent file writes to shared binary files.
+It uses a hybrid approach, with **MPI** used to run the algorithm across multi-GPU clusters, and **CUDA** within each GPU to splitl work across hundreds of thousands of threads.  It also implements **MPI I/O** for parallelized concurrent file writes to shared binary files.
 
 The primary computer vision pipeline is implemented with CUDA kernels
 - Greyscaling and gaussian blur
